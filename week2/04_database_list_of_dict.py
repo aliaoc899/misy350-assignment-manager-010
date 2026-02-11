@@ -27,3 +27,16 @@ print("---------")
 for assignment in course_data:
     if "title" in assignment and assignment["title"] == "Homework 3 - case study":
         print(assignment)
+
+print("index---")
+counter = 0
+for assignment in course_data:
+    if "title" in assignment and assignment["title"] == "Homework 3 - case study":
+        print("Assignment index: ", counter)
+        break
+    counter +=1
+
+
+for index,assignment in enumerate(course_data):
+    if assignment["title"] == "Homework 3 - case study":
+        print("index using enum: ", index)
